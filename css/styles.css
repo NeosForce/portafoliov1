@@ -1,0 +1,94 @@
+/*colores a usar */
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;  
+    --secundario: #0097A7;
+    --terciario: #4fbe9a;
+    --gris: #757575;
+    --fondo: #176a3d;
+    --grisclaro: #DFE9F3;
+}
+/*primera version*/
+/*globales*/
+html{
+    font-size: 62.5%;  /*areglar los pixeles en cualquier monitor*/
+    box-sizing: border-box;
+   /*scroll-snap-type: y mandatory;/*para scroll  hacia arriba y abajo */
+}
+
+*, *:before, *:after {  /*areglar las cajas */
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px; /* 1 rem = 10px*/
+    font-family: 'Sora', sans-serif;
+/*     background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco) 100%); */
+}
+
+/*tipografia*/
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+
+h1,h2,h3{
+    text-align:center;
+}
+
+.titulo span,
+.contenido-hero span{
+    font-size: 2rem;
+}
+
+/*navegacion*/
+.nav-bg{
+    background-color: var(--terciario);
+}
+
+.navegacion-principal{
+    max-width: 120rem; /*esto va para contenedores*/
+    margin: 0 auto; /*centrar// esto va para contenedores*/
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) { 
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion-principal a{
+    display:block ;
+    text-align: center;
+    color: var(--blanco);
+    text-decoration: none; /*quita la linea de la navegacion*/
+    font-size: 2rem;
+    font-weight: bold; /*tambien sirve bold o 700*/
+    padding: 1rem; 
+    border-radius: 1rem;
+}
+
+/*para que se haga el efecto de colocar el mouse over*/
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.lobo{ /*icono del lobo*/
+    width: 6rem;
+    height: 6rem;    
+}
+
+.contenido-hero{
+
+    
+}
