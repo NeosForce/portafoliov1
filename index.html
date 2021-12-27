@@ -1,106 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio Edgar Figueroa</title>
-    <link rel="preload" href="css/normalize.css" as="style"> <!-- normalize carga rapida -->
-    <link rel="stylesheet" href="css/normalize.css">        <!--  normalize -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">  <!-- conecta los servicios de google antes -->
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">    <!-- fuente tomada de google fonts -->
-    <link rel="preload" href="css/styles.css" as="style"> <!-- cargar mas rapido los estilos -->
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <!-- normalize carga rapida -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--  normalize -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- conecta los servicios de google antes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fuente tomada de google fonts -->
+    <link rel="preload" href="css/styles.css" as="style" />
+    <!-- cargar mas rapido los estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
+  <body>
     <!-- encabezado -->
     <header>
-        <h1 class="titulo">Edgar Figueroa<span> Programador Junior</span></h1>
+      <h1 class="titulo">Edgar Figueroa<span> Programador Junior</span></h1>
     </header>
     <!-- navegacion principal -->
     <div class="nav-bg">
-        <nav class="navegacion-principal">
-            <a href="#">Sobre mi</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Contacto</a>
-        </nav>
+      <nav class="navegacion-principal">
+        <a href="#">Sobre mi</a>
+        <a href="#">Proyectos</a>
+        <a href="#">Contacto</a>
+      </nav>
     </div>
 
     <section class="hero">
-        <div class="contenido-hero">
-            <h2>Desarrollo de paginas web <span>Full Stack</span></h2>
-            <p> 
-                <img class="lobo" src=../images/wolf.svg /> Neos<!--  probando colocar iconos y demas -->
-            </p>
-
-        </div>
-
+      <div class="contenido-hero">
+        <h2>Desarrollo de paginas web <span>Full Stack</span></h2>
+        <p>
+          <img class="lobo" src=../images/wolf.svg /> Neos<!--  probando colocar iconos y demas -->
+        </p>
+      </div>
     </section>
 
-    
     <main class="contenedor sombra">
-        <h2>Sobre Mi</h2>
-        <p class="main">Ingeniero Electronico de la Universidad De Investigacion y Desarrollo, responsable, paciente y con facilidad de aprendizaje. Apasionado por las nuevas tecnologias, enfocado en la programacion y automatizacion de procesos industriales.</p>
+      <h2>Sobre Mi</h2>
+      <p class="main">
+        Ingeniero Electronico de la Universidad De Investigacion y Desarrollo,
+        responsable, paciente y con facilidad de aprendizaje. Apasionado por las
+        nuevas tecnologias, enfocado en la programacion y automatizacion de
+        procesos industriales.
+      </p>
 
-        <h2>Mis Proyectos</h2>
+      <h2>Mis Proyectos</h2>
 
-        <section class="proyectos">
+      <section class="proyectos">
+        <h3>Pagina de X</h3>
+      </section>
 
-            <h3>Pagina de X</h3>
+      <section class="proyectos">
+        <h3>Pagina de Y</h3>
+      </section>
 
-        </section>
+      <section class="proyectos">
+        <h3>Pagina de Z</h3>
+      </section>
 
-        <section class="proyectos">
+      <!-- contacto -->
+      <section>
+        <h2>Contacto</h2>
 
-            <h3>Pagina de Y</h3>
+        <form class="formulario">
+          <fieldset>
+            <legend>Contactame llenando todos los campos</legend>
+            <div class="contenedor-campos">
+              <div class="campo">
+                <label>Nombre</label>
+                <input class="input-text" type="text" placeholder="Tu Nombre" />
+              </div>
 
-        </section>
-            
-        <section class="proyectos">
-            
-            <h3>Pagina de Z</h3>
-        
-        </section>
-            
+              <div class="campo">
+                <label>Telefono</label>
+                <input
+                  class="input-text"
+                  type="number"
+                  placeholder="Tu Telefono"
+                />
+              </div>
 
+              <div class="campo">
+                <label>Correo</label>
+                <input
+                  class="input-text"
+                  type="email"
+                  placeholder="Tu e-mail"
+                />
+              </div>
 
+              <div class="campo">
+                <label>Mensaje</label>
+                <textarea
+                  class="input-text"
+                  placeholder="Coloca Tu Mensaje"
+                ></textarea>
+              </div>
+            </div>
 
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <div class="alinear-derecha flex">
+              <input class="boton w-100" type="submit" value="Enviar"/ >
+            </div>
+          </fieldset>
+        </form>
+      </section>
     </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
+    <footer class="footer">
+      <p>Todos los Derechos reservados.® NEOS</p>
+    </footer>
+  </body>
 </html>
-
